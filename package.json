@@ -10,5 +10,9 @@
   "devDependencies": {
     "@playwright/test": "^1.42.1",
     "@types/node": "^20.12.3"
+  },
+  "dependencies": {
+    "@discord/embedded-app-sdk": "^1.1.0",
+    "discord.js": "^14.14.1"
   }
 }
