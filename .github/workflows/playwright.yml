@@ -26,4 +26,6 @@ jobs:
         with:
           name: JSON Report
           path: report.json
-          retention-days: 5
+          retention-days: 5   
+      - name: 'Send discord Report'
+        run: node helpers/reporter/discord.js
