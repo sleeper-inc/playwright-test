@@ -21,3 +21,9 @@ jobs:
         run: PLAYWRIGHT_JSON_OUTPUT_NAME="report.json" npx playwright test --reporter=json,line
         env:
           HOME: /root
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v4
+        with:
+          name: JSON Report
+          path: report.json
+          retention-days: 5
